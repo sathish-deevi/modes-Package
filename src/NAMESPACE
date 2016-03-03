@@ -1,0 +1,12 @@
+export(Ashmans_D)
+export(amps)
+export(bimodality_amplitude)
+export(bimodality_coefficient)
+export(bimodality_ratio)
+export(bimodality_separation)
+export(kurtosis)
+export(nth_highest)
+export(skewness)
+
+importFrom("graphics", "abline", "plot", "text")
+importFrom("stats", "density")
