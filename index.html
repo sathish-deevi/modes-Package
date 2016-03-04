@@ -43,6 +43,122 @@ and the tarball itself is available from <a href="https://cran.r-project.org/src
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
 
+<h1>
+<a id="12-examples-of-the-most-useful-and-common-features-of-this-package" class="anchor" href="#12-examples-of-the-most-useful-and-common-features-of-this-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>12 Examples of the most useful and common features of this package</h1>
+
+<h1>
+<a id="are-included-below" class="anchor" href="#are-included-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>are included below.</h1>
+
+<h5>
+<a id="nonparametric-examples" class="anchor" href="#nonparametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nonparametric Examples</h5>
+
+<h3>
+<a id="1-mode-examples" class="anchor" href="#1-mode-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1) Mode examples</h3>
+
+<pre><code>  ##Example 1.1
+</code></pre>
+
+<p>#data&lt;-c(rep(6,9),rep(3,3))
+ #mode(data,type=1,"NULL","NULL")</p>
+
+<p>##Example 1.2
+ #data&lt;-c(rep(6,9),rep(3,9))
+ #mode(data,type=1,"NULL","NULL")</p>
+
+<p>##Example 1.3
+ #data&lt;-c(rep(6,9),rep(3,8),rep(7,7),rep(2,6))
+ #mode(data,type=1,"NULL",2)</p>
+
+<p>##Example 1.4
+ #data&lt;-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))
+ #mode(data)</p>
+
+<p>##Example 1.5
+ #data&lt;-c(rep(6,3),rep(3,3),rnorm(15,0,1))
+ #mode(data,3,NULL,4)
+ #mode(data,type=2,digits=1,3)</p>
+
+<h3>
+<a id="2-other-general-parametric-examples" class="anchor" href="#2-other-general-parametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2) Other General Parametric Examples</h3>
+
+<p>##Example 2.1
+ #data&lt;-c(rnorm(15,0,1),rnorm(21,5,1))
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_coefficient(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<p>##Example 2.2
+ #data&lt;-c(rnorm(21,0,1),rnorm(21,5,1))
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_coefficient(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<h3>
+<a id="3-mixture-proportions-examples" class="anchor" href="#3-mixture-proportions-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3) Mixture Proportions Examples</h3>
+
+<p>##Example 3.1
+ #dist1&lt;-rnorm(21,5,2)
+ #dist2&lt;-dist1+11
+ #data&lt;-c(dist1,dist2)
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<p>##Example 3.2
+ #dist1&lt;-rnorm(21,-15,1)
+ #dist2&lt;-rep(dist1,3)+30
+ #data&lt;-c(dist1,dist2)
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<p>##Example 3.4
+ #dist1&lt;-rep(7,70)
+ #dist2&lt;-rep(-7,70)
+ #data&lt;-c(dist1,dist2)
+ #hist(data)
+ #bimodality_ratio(data,FALSE)</p>
+
+<h5>
+<a id="parametric-examples" class="anchor" href="#parametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parametric Examples</h5>
+
+<h3>
+<a id="4-replicating-a-two-component-gaussian-normal-mixture" class="anchor" href="#4-replicating-a-two-component-gaussian-normal-mixture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4) Replicating a two component Gaussian (normal) mixture</h3>
+
+<h3>
+<a id="example-41" class="anchor" href="#example-41" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 4.1</h3>
+
+<p>##Draw data &amp; plot the distribution
+ #dist1&lt;-rnorm(14,-5,1)
+ #dist2&lt;-rnorm(21,5,1)
+ #plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")</p>
+
+<p>##Calculate the means and standard deviations
+ #mu1&lt;-mean(dist1)
+ #mu2&lt;-mean(dist2)
+ #sd1&lt;-sd(dist1)
+ #sd2&lt;-sd(dist2)</p>
+
+<p>##Apply measures
+ #Ashmans_D(mu1,mu2,sd1,sd2)
+ #bimodality_separation(mu1,mu2,sd1,sd2)</p>
+
+<h3>
+<a id="5-applying-to-know-mixture-components" class="anchor" href="#5-applying-to-know-mixture-components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5) Applying to know mixture components</h3>
+
+<h3>
+<a id="example-51" class="anchor" href="#example-51" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 5.1</h3>
+
+<p>##Draw data &amp; plot the distribution
+ #data&lt;-c(rnorm(15,0,1),rnorm(21,15,3))
+ #plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")</p>
+
+<p>##Apply measures
+ #Ashmans_D(mu1,mu2,sd1,sd2)
+ #bimodality_separation(mu1,mu2,sd1,sd2)</p>
+
 <h2>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
 
