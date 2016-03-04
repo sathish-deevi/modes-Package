@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Modes-package by sathish-deevi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Modes-package</h1>
-      <h2 class="project-tagline">An R package that calculates various mode and modal measures for complex distributions and big data.</h2>
-      <a href="https://github.com/sathish-deevi/modes-Package" class="btn">View on GitHub</a>
-      <a href="https://github.com/sathish-deevi/modes-Package/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/sathish-deevi/modes-Package/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h1>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Modes-package by sathish-deevi</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Modes-package</h1>
+        <h2>An R package that calculates various mode and modal measures for complex distributions and big data.</h2>
+        <a href="https://github.com/sathish-deevi/modes-Package" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="r-modes-package" class="anchor" href="#r-modes-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>R Modes Package.</h1>
 
 <p>Note: Please Download from CRAN repository; the links to the left are unstable. 
@@ -34,129 +43,40 @@ and the tarball itself is available from <a href="https://cran.r-project.org/src
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
 
-<p>12 Examples of the most useful and common features of this package</p>
-
-<h1>
-<a id="are-included-below" class="anchor" href="#are-included-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>are included below.</h1>
+<p>12 Examples of the most useful and common features of this package are included below.</p>
 
 <h3>
 <a id="nonparametric-examples" class="anchor" href="#nonparametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nonparametric Examples</h3>
 
-<p>1 Mode examples</p>
+<ol>
+<li>Mode examples</li>
+</ol>
 
-<p>Example 1.1
-    <code>language-R
-data&lt;-c(rep(6,9),rep(3,3))
+<p>Example 1.1</p>
+
+<pre lang="language-R"><code>data&lt;-c(rep(6,9),rep(3,3))
 mode(data,type=1,"NULL","NULL")
-</code></p>
+</code></pre>
 
-<p>Example 1.2
-`data&lt;-c(rep(6,9),rep(3,9))
-mode(data,type=1,"NULL","NULL")</p>
+<p>Example 1.2</p>
 
-<h2>
-<a id="example-13" class="anchor" href="#example-13" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 1.3</h2>
+<pre><code>data&lt;-c(rep(6,9),rep(3,9))
+mode(data,type=1,"NULL","NULL")
+</code></pre>
 
-<h1>
-<a id="data-crep69rep38rep77rep26" class="anchor" href="#data-crep69rep38rep77rep26" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>data&lt;-c(rep(6,9),rep(3,8),rep(7,7),rep(2,6))</h1>
+<p>Example 1.3</p>
 
-<h1>
-<a id="modedatatype1null2" class="anchor" href="#modedatatype1null2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>mode(data,type=1,"NULL",2)</h1>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">data</span><span class="pl-k">&lt;-</span>c(rep(<span class="pl-c1">6</span>,<span class="pl-c1">9</span>),rep(<span class="pl-c1">3</span>,<span class="pl-c1">8</span>),rep(<span class="pl-c1">7</span>,<span class="pl-c1">7</span>),rep(<span class="pl-c1">2</span>,<span class="pl-c1">6</span>))
+mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-c1">1</span>,<span class="pl-s"><span class="pl-pds">"</span>NULL<span class="pl-pds">"</span></span>,<span class="pl-c1">2</span>)</pre></div>
 
-<h2>
-<a id="example-14" class="anchor" href="#example-14" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 1.4</h2>
+<p>Example 1.4
+    data&lt;-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))
+    mode(data)</p>
 
-<h1>
-<a id="data-crnorm1501rnorm2151rep33" class="anchor" href="#data-crnorm1501rnorm2151rep33" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>data&lt;-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))</h1>
-
-<h1>
-<a id="modedata" class="anchor" href="#modedata" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>mode(data)</h1>
-
-<p>##Example 1.5
- #data&lt;-c(rep(6,3),rep(3,3),rnorm(15,0,1))
- #mode(data,3,NULL,4)
- #mode(data,type=2,digits=1,3)</p>
-
-<h3>
-<a id="2-other-general-parametric-examples" class="anchor" href="#2-other-general-parametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2) Other General Parametric Examples</h3>
-
-<p>##Example 2.1
- #data&lt;-c(rnorm(15,0,1),rnorm(21,5,1))
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_coefficient(data,TRUE)
- #bimodality_ratio(data,FALSE)</p>
-
-<p>##Example 2.2
- #data&lt;-c(rnorm(21,0,1),rnorm(21,5,1))
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_coefficient(data,TRUE)
- #bimodality_ratio(data,FALSE)</p>
-
-<h3>
-<a id="3-mixture-proportions-examples" class="anchor" href="#3-mixture-proportions-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3) Mixture Proportions Examples</h3>
-
-<p>##Example 3.1
- #dist1&lt;-rnorm(21,5,2)
- #dist2&lt;-dist1+11
- #data&lt;-c(dist1,dist2)
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_ratio(data,FALSE)</p>
-
-<p>##Example 3.2
- #dist1&lt;-rnorm(21,-15,1)
- #dist2&lt;-rep(dist1,3)+30
- #data&lt;-c(dist1,dist2)
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_ratio(data,FALSE)</p>
-
-<p>##Example 3.4
- #dist1&lt;-rep(7,70)
- #dist2&lt;-rep(-7,70)
- #data&lt;-c(dist1,dist2)
- #hist(data)
- #bimodality_ratio(data,FALSE)</p>
-
-<h5>
-<a id="parametric-examples" class="anchor" href="#parametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parametric Examples</h5>
-
-<h3>
-<a id="4-replicating-a-two-component-gaussian-normal-mixture" class="anchor" href="#4-replicating-a-two-component-gaussian-normal-mixture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4) Replicating a two component Gaussian (normal) mixture</h3>
-
-<h3>
-<a id="example-41" class="anchor" href="#example-41" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 4.1</h3>
-
-<p>##Draw data &amp; plot the distribution
- #dist1&lt;-rnorm(14,-5,1)
- #dist2&lt;-rnorm(21,5,1)
- #plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")</p>
-
-<p>##Calculate the means and standard deviations
- #mu1&lt;-mean(dist1)
- #mu2&lt;-mean(dist2)
- #sd1&lt;-sd(dist1)
- #sd2&lt;-sd(dist2)</p>
-
-<p>##Apply measures
- #Ashmans_D(mu1,mu2,sd1,sd2)
- #bimodality_separation(mu1,mu2,sd1,sd2)</p>
-
-<h3>
-<a id="5-applying-to-know-mixture-components" class="anchor" href="#5-applying-to-know-mixture-components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5) Applying to know mixture components</h3>
-
-<h3>
-<a id="example-51" class="anchor" href="#example-51" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 5.1</h3>
-
-<p>##Draw data &amp; plot the distribution
- #data&lt;-c(rnorm(15,0,1),rnorm(21,15,3))
- #plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")</p>
-
-<p>##Apply measures
- #Ashmans_D(mu1,mu2,sd1,sd2)
- #bimodality_separation(mu1,mu2,sd1,sd2)</p>
+<p>Example 1.5
+    data&lt;-c(rep(6,3),rep(3,3),rnorm(15,0,1))
+    mode(data,3,NULL,4)
+    mode(data,type=2,digits=1,3)</p>
 
 <h2>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
@@ -191,14 +111,24 @@ mode(data,type=1,"NULL","NULL")</p>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/sathish-deevi/modes-Package">Modes-package</a> is maintained by <a href="https://github.com/sathish-deevi">sathish-deevi</a>.</span>
+        <aside id="sidebar">
+          <a href="https://github.com/sathish-deevi/modes-Package/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/sathish-deevi/modes-Package/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+          <p class="repo-owner"><a href="https://github.com/sathish-deevi/modes-Package"></a> is maintained by <a href="https://github.com/sathish-deevi">sathish-deevi</a>.</p>
 
-    </section>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
   
   </body>
