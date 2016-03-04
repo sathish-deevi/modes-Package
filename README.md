@@ -6,7 +6,9 @@ https://cran.r-project.org/web/packages/modes/index.html
 
 For reporting bugs or asking questions, feel free to use GitHub or http://sdeevi.com/modes_package/
 
-Select examples are available in the manual files.
+Github page for the R modes package: http://sathish-deevi.github.io/modes-Package
+
+Select examples are available in the manual files <https://cran.r-project.org/web/packages/modes/modes.pdf>.
  
 ## Description
 
