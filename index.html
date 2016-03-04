@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Modes-package by sathish-deevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Modes-package by sathish-deevi</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Modes-package</h1>
-        <h2>An R package that calculates various mode and modal measures for complex distributions and big data.</h2>
-        <a href="https://github.com/sathish-deevi/modes-Package" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">Modes-package</h1>
+      <h2 class="project-tagline">An R package that calculates various mode and modal measures for complex distributions and big data.</h2>
+      <a href="https://github.com/sathish-deevi/modes-Package" class="btn">View on GitHub</a>
+      <a href="https://github.com/sathish-deevi/modes-Package/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/sathish-deevi/modes-Package/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
+    <section class="main-content">
+      <h1>
 <a id="r-modes-package" class="anchor" href="#r-modes-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>R Modes Package.</h1>
 
 <p>Note: Please Download from CRAN repository; the links to the left are unstable. 
@@ -51,15 +42,16 @@ and the tarball itself is available from <a href="https://cran.r-project.org/src
 <h3>
 <a id="nonparametric-examples" class="anchor" href="#nonparametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nonparametric Examples</h3>
 
-<p>1) Mode examples</p>
+<p>1 Mode examples</p>
 
-<p>Example 1.1</p>
-
-<div class="highlight highlight-source-r"><pre><span class="pl-smi">data</span><span class="pl-k">&lt;-</span>c(rep(<span class="pl-c1">6</span>,<span class="pl-c1">9</span>),rep(<span class="pl-c1">3</span>,<span class="pl-c1">3</span>))
-mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-c1">1</span>,<span class="pl-s"><span class="pl-pds">"</span>NULL<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>NULL<span class="pl-pds">"</span></span>)</pre></div>
+<p>Example 1.1
+    <code>language-R
+data&lt;-c(rep(6,9),rep(3,3))
+mode(data,type=1,"NULL","NULL")
+</code></p>
 
 <p>Example 1.2
-data&lt;-c(rep(6,9),rep(3,9))
+`data&lt;-c(rep(6,9),rep(3,9))
 mode(data,type=1,"NULL","NULL")</p>
 
 <h2>
@@ -199,24 +191,14 @@ mode(data,type=1,"NULL","NULL")</p>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-        </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/sathish-deevi/modes-Package/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/sathish-deevi/modes-Package/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/sathish-deevi/modes-Package">Modes-package</a> is maintained by <a href="https://github.com/sathish-deevi">sathish-deevi</a>.</span>
 
-          <p class="repo-owner"><a href="https://github.com/sathish-deevi/modes-Package"></a> is maintained by <a href="https://github.com/sathish-deevi">sathish-deevi</a>.</p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+    </section>
 
   
   </body>
