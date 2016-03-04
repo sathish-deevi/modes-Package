@@ -43,35 +43,42 @@ and the tarball itself is available from <a href="https://cran.r-project.org/src
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
 
-<h1>
-<a id="12-examples-of-the-most-useful-and-common-features-of-this-package" class="anchor" href="#12-examples-of-the-most-useful-and-common-features-of-this-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>12 Examples of the most useful and common features of this package</h1>
+<p>12 Examples of the most useful and common features of this package</p>
 
 <h1>
 <a id="are-included-below" class="anchor" href="#are-included-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>are included below.</h1>
 
-<h5>
-<a id="nonparametric-examples" class="anchor" href="#nonparametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nonparametric Examples</h5>
-
 <h3>
-<a id="1-mode-examples" class="anchor" href="#1-mode-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1) Mode examples</h3>
+<a id="nonparametric-examples" class="anchor" href="#nonparametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nonparametric Examples</h3>
 
-<pre><code>  ##Example 1.1
-</code></pre>
+<p>1) Mode examples</p>
 
-<p>#data&lt;-c(rep(6,9),rep(3,3))
- #mode(data,type=1,"NULL","NULL")</p>
+<p>Example 1.1</p>
 
-<p>##Example 1.2
- #data&lt;-c(rep(6,9),rep(3,9))
- #mode(data,type=1,"NULL","NULL")</p>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">data</span><span class="pl-k">&lt;-</span>c(rep(<span class="pl-c1">6</span>,<span class="pl-c1">9</span>),rep(<span class="pl-c1">3</span>,<span class="pl-c1">3</span>))
+mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-c1">1</span>,<span class="pl-s"><span class="pl-pds">"</span>NULL<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>NULL<span class="pl-pds">"</span></span>)</pre></div>
 
-<p>##Example 1.3
- #data&lt;-c(rep(6,9),rep(3,8),rep(7,7),rep(2,6))
- #mode(data,type=1,"NULL",2)</p>
+<p>Example 1.2
+data&lt;-c(rep(6,9),rep(3,9))
+mode(data,type=1,"NULL","NULL")</p>
 
-<p>##Example 1.4
- #data&lt;-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))
- #mode(data)</p>
+<h2>
+<a id="example-13" class="anchor" href="#example-13" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 1.3</h2>
+
+<h1>
+<a id="data-crep69rep38rep77rep26" class="anchor" href="#data-crep69rep38rep77rep26" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>data&lt;-c(rep(6,9),rep(3,8),rep(7,7),rep(2,6))</h1>
+
+<h1>
+<a id="modedatatype1null2" class="anchor" href="#modedatatype1null2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>mode(data,type=1,"NULL",2)</h1>
+
+<h2>
+<a id="example-14" class="anchor" href="#example-14" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example 1.4</h2>
+
+<h1>
+<a id="data-crnorm1501rnorm2151rep33" class="anchor" href="#data-crnorm1501rnorm2151rep33" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>data&lt;-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))</h1>
+
+<h1>
+<a id="modedata" class="anchor" href="#modedata" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>mode(data)</h1>
 
 <p>##Example 1.5
  #data&lt;-c(rep(6,3),rep(3,3),rnorm(15,0,1))
