@@ -78,6 +78,49 @@ mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class=
     mode(data,3,NULL,4)
     mode(data,type=2,digits=1,3)</p>
 
+<h3>
+<a id="2-other-general-parametric-examples" class="anchor" href="#2-other-general-parametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2) Other General Parametric Examples</h3>
+
+<p>##Example 2.1
+ #data&lt;-c(rnorm(15,0,1),rnorm(21,5,1))
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_coefficient(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<p>##Example 2.2
+ #data&lt;-c(rnorm(21,0,1),rnorm(21,5,1))
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_coefficient(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<h3>
+<a id="3-mixture-proportions-examples" class="anchor" href="#3-mixture-proportions-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3) Mixture Proportions Examples</h3>
+
+<p>##Example 3.1
+ #dist1&lt;-rnorm(21,5,2)
+ #dist2&lt;-dist1+11
+ #data&lt;-c(dist1,dist2)
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<p>##Example 3.2
+ #dist1&lt;-rnorm(21,-15,1)
+ #dist2&lt;-rep(dist1,3)+30
+ #data&lt;-c(dist1,dist2)
+ #hist(data)
+ #bimodality_amplitude(data,TRUE)
+ #bimodality_ratio(data,FALSE)</p>
+
+<p>##Example 3.4
+ #dist1&lt;-rep(7,70)
+ #dist2&lt;-rep(-7,70)
+ #data&lt;-c(dist1,dist2)
+ #hist(data)
+ #bimodality_ratio(data,FALSE)</p>
+
 <h2>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
 
