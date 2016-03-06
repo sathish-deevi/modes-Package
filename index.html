@@ -143,19 +143,25 @@ bimodality_ratio(data,FALSE)
 
 <p>Example 4.1</p>
 
-<pre><code>#Draw data &amp; plot the distribution
-dist1&lt;-rnorm(14,-5,1)
+<h1>
+<a id="draw-data--plot-the-distribution" class="anchor" href="#draw-data--plot-the-distribution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Draw data &amp; plot the distribution</h1>
+
+<pre><code>dist1&lt;-rnorm(14,-5,1)
 dist2&lt;-rnorm(21,5,1)
 plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
+</code></pre>
 
- ##Calculate the means and standard deviations
-mu1&lt;-mean(dist1)
+<p>##Calculate the means and standard deviations</p>
+
+<pre><code>mu1&lt;-mean(dist1)
 mu2&lt;-mean(dist2)
 sd1&lt;-sd(dist1)
 sd2&lt;-sd(dist2)
+</code></pre>
 
- ##Apply measures
-Ashmans_D(mu1,mu2,sd1,sd2)
+<p>##Apply measures</p>
+
+<pre><code>Ashmans_D(mu1,mu2,sd1,sd2)
 bimodality_separation(mu1,mu2,sd1,sd2)
 </code></pre>
 
@@ -167,9 +173,11 @@ bimodality_separation(mu1,mu2,sd1,sd2)
 <pre><code> ##Draw data &amp; plot the distribution
 data&lt;-c(rnorm(15,0,1),rnorm(21,15,3))
 plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
+</code></pre>
 
- ##Apply measures
-Ashmans_D(mu1,mu2,sd1,sd2)
+<p>##Apply measures</p>
+
+<pre><code>Ashmans_D(mu1,mu2,sd1,sd2)
 bimodality_separation(mu1,mu2,sd1,sd2)
 </code></pre>
 
