@@ -87,20 +87,20 @@ mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class=
 
 <p>Example 2.1</p>
 
-<pre><code> #data&lt;-c(rnorm(15,0,1),rnorm(21,5,1))
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_coefficient(data,TRUE)
- #bimodality_ratio(data,FALSE)
+<pre><code>data&lt;-c(rnorm(15,0,1),rnorm(21,5,1))
+hist(data)
+bimodality_amplitude(data,TRUE)
+bimodality_coefficient(data,TRUE)
+bimodality_ratio(data,FALSE)
 </code></pre>
 
 <p>Example 2.2</p>
 
-<pre><code> #data&lt;-c(rnorm(21,0,1),rnorm(21,5,1))
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_coefficient(data,TRUE)
- #bimodality_ratio(data,FALSE)
+<pre><code>data&lt;-c(rnorm(21,0,1),rnorm(21,5,1))
+hist(data)
+bimodality_amplitude(data,TRUE)
+bimodality_coefficient(data,TRUE)
+bimodality_ratio(data,FALSE)
 </code></pre>
 
 <h4>
@@ -108,31 +108,31 @@ mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class=
 
 <p>Example 3.1</p>
 
-<pre><code> #dist1&lt;-rnorm(21,5,2)
- #dist2&lt;-dist1+11
- #data&lt;-c(dist1,dist2)
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_ratio(data,FALSE)
+<pre><code>dist1&lt;-rnorm(21,5,2)
+dist2&lt;-dist1+11
+data&lt;-c(dist1,dist2)
+hist(data)
+bimodality_amplitude(data,TRUE)
+bimodality_ratio(data,FALSE)
 </code></pre>
 
 <p>Example 3.2</p>
 
-<pre><code> #dist1&lt;-rnorm(21,-15,1)
- #dist2&lt;-rep(dist1,3)+30
- #data&lt;-c(dist1,dist2)
- #hist(data)
- #bimodality_amplitude(data,TRUE)
- #bimodality_ratio(data,FALSE)
+<pre><code>dist1&lt;-rnorm(21,-15,1)
+dist2&lt;-rep(dist1,3)+30
+data&lt;-c(dist1,dist2)
+hist(data)
+bimodality_amplitude(data,TRUE)
+bimodality_ratio(data,FALSE)
 </code></pre>
 
 <p>Example 3.4</p>
 
-<pre><code> #dist1&lt;-rep(7,70)
- #dist2&lt;-rep(-7,70)
- #data&lt;-c(dist1,dist2)
- #hist(data)
- #bimodality_ratio(data,FALSE)
+<pre><code>dist1&lt;-rep(7,70)
+dist2&lt;-rep(-7,70)
+data&lt;-c(dist1,dist2)
+hist(data)
+bimodality_ratio(data,FALSE)
 </code></pre>
 
 <h3>
@@ -143,20 +143,20 @@ mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class=
 
 <p>Example 4.1</p>
 
-<pre><code> ##Draw data &amp; plot the distribution
- #dist1&lt;-rnorm(14,-5,1)
- #dist2&lt;-rnorm(21,5,1)
- #plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
+<pre><code>#Draw data &amp; plot the distribution
+dist1&lt;-rnorm(14,-5,1)
+dist2&lt;-rnorm(21,5,1)
+plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
 
  ##Calculate the means and standard deviations
- #mu1&lt;-mean(dist1)
- #mu2&lt;-mean(dist2)
- #sd1&lt;-sd(dist1)
- #sd2&lt;-sd(dist2)
+mu1&lt;-mean(dist1)
+mu2&lt;-mean(dist2)
+sd1&lt;-sd(dist1)
+sd2&lt;-sd(dist2)
 
  ##Apply measures
- #Ashmans_D(mu1,mu2,sd1,sd2)
- #bimodality_separation(mu1,mu2,sd1,sd2)
+Ashmans_D(mu1,mu2,sd1,sd2)
+bimodality_separation(mu1,mu2,sd1,sd2)
 </code></pre>
 
 <h3>
@@ -165,12 +165,12 @@ mode(<span class="pl-smi">data</span>,<span class="pl-v">type</span><span class=
 <p>Example 5.1</p>
 
 <pre><code> ##Draw data &amp; plot the distribution
- #data&lt;-c(rnorm(15,0,1),rnorm(21,15,3))
- #plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
+data&lt;-c(rnorm(15,0,1),rnorm(21,15,3))
+plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
 
  ##Apply measures
- #Ashmans_D(mu1,mu2,sd1,sd2)
- #bimodality_separation(mu1,mu2,sd1,sd2)
+Ashmans_D(mu1,mu2,sd1,sd2)
+bimodality_separation(mu1,mu2,sd1,sd2)
 </code></pre>
 
 <h2>
