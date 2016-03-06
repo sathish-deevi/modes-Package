@@ -6,6 +6,7 @@ export(bimodality_ratio)
 export(bimodality_separation)
 export(kurtosis)
 export(nth_highest)
+export(mode)
 export(skewness)
 
 importFrom("graphics", "abline", "plot", "text")
