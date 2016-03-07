@@ -21,7 +21,7 @@ Description: Designed with a dual purpose of
     mode or modes for various data types, it also provides a programmatic
     way of understanding the modality (i.e. unimodal, bimodal, etc.) of
     a dataset (whether it's big data or not). See
-    <http://www.sdeevi.com/modes_package> for examples and discussion.
+    <http://www.sdeevi.com/modes_package> or <https://github.com/sathish-deevi/modes-Package> for examples and discussion.
 Depends:
     R (>= 3.2.2)
 License: CC BY-NC-SA 4.0
