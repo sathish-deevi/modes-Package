@@ -103,10 +103,10 @@ temp<-function(x){
 
 
 #####################################
-#	 	    Mode			#
+#	 	    Modes			#
 #####################################
 
-mode<-function(data,type=1,digits="NULL",nmore="NULL"){
+modes<-function(data,type=1,digits="NULL",nmore="NULL"){
 	if (type=="1"){
 		tabs<-rle(sort(as.integer(data)))
 		tabs<-t(as.matrix(cbind(tabs$values,tabs$lengths)))
