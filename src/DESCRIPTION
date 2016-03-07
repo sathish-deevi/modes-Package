@@ -1,7 +1,7 @@
 Package: modes
 Title: Find the Modes and Assess the Modality
     of Complex and Mixture Distributions, Especially with Big Datasets
-Version: 0.6.1
+Version: 0.7.0
 Date: 2016-02-05
 Author: Sathish Deevi [aut, cre],
     4D Strategies [aut,own]
