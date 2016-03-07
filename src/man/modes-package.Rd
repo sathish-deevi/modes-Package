@@ -1,6 +1,5 @@
 \name{modes-package}
 \alias{modes-package}
-\alias{modes}
 \docType{package}
 \title{modes: An R package to find the modes & assess the modality 
 	of complex or mixed distributions
