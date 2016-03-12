@@ -165,8 +165,118 @@ Amplitude (y)
 
 
 
+Example 3.1
+```language-R
+set.seed(1246)
+dist1<-rnorm(21,5,2)
+dist2<-dist1+11
+data<-c(dist1,dist2)
 
 
+
+```
+
+![Example 3.1.1] (Images/Example_3.1.1.jpeg) 
+![Example 3.1.1] (Images/Example_3.1.2.jpeg)
+
+```
+> bimodality_amplitude(data,TRUE)
+[1] 0.6894354
+> bimodality_ratio(data,FALSE)
+Amplitude (y) 
+     1.000229 
+     
+```
+
+
+
+
+
+![Example 3.1.3] (Images/Example_3.1.3.jpeg) 
+
+
+
+
+Example 3.2
+```language-R
+set.seed(1246)
+dist1<-rnorm(21,-15,1)
+dist2<-rep(dist1,3)+30
+data<-c(dist1,dist2)
+```
+
+![Example 3.2.1] (Images/Example_3.2.1.jpeg) 
+![Example 3.2.1] (Images/Example_3.2.2.jpeg)
+
+```
+> bimodality_amplitude(data,TRUE)
+[1] 1
+> bimodality_ratio(data,FALSE)
+Amplitude (y) 
+     2.999414 
+
+```
+
+![Example 3.2.3] (Images/Example_3.2.3.jpeg) 
+
+
+
+
+
+Example 3.3
+```language-R
+set.seed(1246)
+dist1<-rep(7,70)
+dist2<-rep(-7,70)
+data<-c(dist1,dist2)
+
+
+```
+
+![Example 3.3.1] (Images/Example_3.3.1.jpeg) 
+![Example 3.3.1] (Images/Example_3.3.2.jpeg)
+
+```
+
+> bimodality_ratio(data,FALSE)
+Amplitude (y) 
+            1 
+```
+
+
+
+
+Example 4.1
+```language-R
+
+
+
+```
+
+![Example 4.1.1] (Images/Example_4.1.1.jpeg) 
+![Example 4.1.1] (Images/Example_4.1.2.jpeg)
+
+```
+
+```
+
+
+
+
+
+Example 5.1
+```language-R
+
+
+
+```
+
+![Example 5.1.1] (Images/Example_5.1.1.jpeg) 
+![Example 5.1.1] (Images/Example_5.1.2.jpeg)
+
+```
+
+```
 
 
 
