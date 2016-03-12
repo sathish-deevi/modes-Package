@@ -301,7 +301,7 @@ plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
 
 
 
-
+<!---------------------------------
 Example 99.9
 ```language-R
 
@@ -315,3 +315,4 @@ Example 99.9
 ```
 
 ```
+------------------------------------>
