@@ -9,4 +9,4 @@ Example 1.1
 data<-c(rep(6,9),rep(3,3))
 mode(data,type=1,"NULL","NULL")
 ```
-[Example 1.1] (Images/Example 1.1.1.emf)
+![Example 1.1] (Images/Example 1.1.1.emf)
