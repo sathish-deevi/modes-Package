@@ -232,7 +232,7 @@ data<-c(dist1,dist2)
 ```
 
 ![Example 3.3.1] (Images/Example_3.3.1.jpeg) 
-![Example 3.3.3] (Images/Example_3.3.2.jpeg)
+![Example 3.3.2] (Images/Example_3.3.2.jpeg)
 
 ```
 
