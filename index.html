@@ -98,7 +98,7 @@ Length    9    8    7    6
 
 <pre><code>    set.seed(1246)
     data&lt;-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))
-    mode(data)
+    modes(data)
 </code></pre>
 
 <p><img src="Images/Example_1.4.1.jpeg" alt="Example 1.4.1">
@@ -114,9 +114,12 @@ Length   12
 
 <pre><code>    set.seed(1246)
     data&lt;-c(rep(6,3),rep(3,3),rnorm(15,0,1))
-    mode(data,3,NULL,4)
-    mode(data,type=2,digits=1,3)
+    modes(data,3,NULL,4)
+    modes(data,type=2,digits=1,3)
 </code></pre>
+
+<p><img src="Images/Example_1.5.1.jpeg" alt="Example 1.5.1">
+<img src="Images/Example_1.5.2.jpeg" alt="Example 1.5.1"></p>
 
 <pre><code>       [,1] [,2] [,3]                   [,4]                
 Value  "3"  "6"  "-0.00528877744563036" "-0.265047873213653"
@@ -171,6 +174,20 @@ bimodality_coefficient(data,TRUE)
 bimodality_ratio(data,FALSE)
 </code></pre>
 
+<p><img src="Images/Example_2.1.1.jpeg" alt="Example 2.1.1"> 
+<img src="Images/Example_2.1.2.jpeg" alt="Example 2.1.2"></p>
+
+<pre><code>&gt; bimodality_amplitude(data,TRUE)
+[1] 0.5343913
+&gt; bimodality_coefficient(data,TRUE)
+[1] 0.8894365
+&gt; bimodality_ratio(data,FALSE)
+Amplitude (y) 
+     1.413765 
+</code></pre>
+
+<p><img src="Images/Example_2.1.3.jpeg" alt="Example 2.1.3"></p>
+
 <p>Example 2.2</p>
 
 <pre><code>set.seed(1246)
@@ -179,6 +196,19 @@ hist(data)
 bimodality_amplitude(data,TRUE)
 bimodality_coefficient(data,TRUE)
 bimodality_ratio(data,FALSE)
+</code></pre>
+
+<p><img src="Images/Example_2.2.1.jpeg" alt="Example 2.2.1"> 
+<img src="Images/Example_2.2.2.jpeg" alt="Example 2.2.2"></p>
+
+<pre><code>
+&gt; bimodality_amplitude(data,TRUE)
+[1] 0.5569044
+&gt; bimodality_coefficient(data,TRUE)
+[1] 0.880667
+&gt; bimodality_ratio(data,FALSE)
+Amplitude (y) 
+    0.9039876 
 </code></pre>
 
 <h3>
