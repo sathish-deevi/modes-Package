@@ -11,3 +11,8 @@ mode(data,type=1,"NULL","NULL")
 ```
 
 ![Example 1.1.1] (Images/myplot1.jpeg)
+```
+       [,1]
+Value     6
+Length    9
+```
