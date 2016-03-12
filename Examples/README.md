@@ -11,7 +11,7 @@ mode(data,type=1,"NULL","NULL")
 ```
 
 ![Example 1.1.1] (Images/Example_1.1.1.jpeg) 
-![Example 1.1.1] (Images/Example_1.1.2.jpeg)
+![Example 1.1.2] (Images/Example_1.1.2.jpeg)
 
 ```
        [,1]
@@ -42,7 +42,7 @@ modes(data,type=1,"NULL",2)
 ```
 
 ![Example 1.3.1] (Images/Example_1.3.1.jpeg)
-![Example 1.3.1] (Images/Example_1.3.2.jpeg)
+![Example 1.3.2] (Images/Example_1.3.2.jpeg)
 
 ```
        [,1] [,2] [,3] [,4]
@@ -58,7 +58,7 @@ Example 1.4
     mode(data)
 ```
 ![Example 1.4.1] (Images/Example_1.4.1.jpeg)
-![Example 1.4.1] (Images/Example_1.4.2.jpeg)
+![Example 1.4.2] (Images/Example_1.4.2.jpeg)
 
 ```
        [,1]
@@ -117,7 +117,7 @@ In modes(data, type = 2, digits = 1, 3) : A single observation
 ```
  
 ![Example 1.5.1] (Images/Example_1.5.1.jpeg)
-![Example 1.5.1] (Images/Example_1.5.2.jpeg)
+![Example 1.5.2] (Images/Example_1.5.2.jpeg)
 
 
 
@@ -179,7 +179,7 @@ data<-c(dist1,dist2)
 ```
 
 ![Example 3.1.1] (Images/Example_3.1.1.jpeg) 
-![Example 3.1.1] (Images/Example_3.1.2.jpeg)
+![Example 3.1.2] (Images/Example_3.1.2.jpeg)
 
 ```
 > bimodality_amplitude(data,TRUE)
@@ -204,7 +204,7 @@ data<-c(dist1,dist2)
 ```
 
 ![Example 3.2.1] (Images/Example_3.2.1.jpeg) 
-![Example 3.2.1] (Images/Example_3.2.2.jpeg)
+![Example 3.2.2] (Images/Example_3.2.2.jpeg)
 
 ```
 > bimodality_amplitude(data,TRUE)
@@ -232,7 +232,7 @@ data<-c(dist1,dist2)
 ```
 
 ![Example 3.3.1] (Images/Example_3.3.1.jpeg) 
-![Example 3.3.1] (Images/Example_3.3.2.jpeg)
+![Example 3.3.3] (Images/Example_3.3.2.jpeg)
 
 ```
 
@@ -260,7 +260,7 @@ sd2<-sd(dist2)
 ```
 
 ![Example 4.1.1] (Images/Example_4.1.1.jpeg) 
-![Example 4.1.1] (Images/Example_4.1.2.jpeg)
+![Example 4.1.2] (Images/Example_4.1.2.jpeg)
 
 ```
 
@@ -285,7 +285,7 @@ plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
 ```
 
 ![Example 5.1.1] (Images/Example_5.1.1.jpeg) 
-![Example 5.1.1] (Images/Example_5.1.2.jpeg)
+![Example 5.1.2] (Images/Example_5.1.2.jpeg)
 
 ```
 > Ashmans_D(mu1,mu2,sd1,sd2)
