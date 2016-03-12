@@ -72,6 +72,7 @@ set.seed(1246)
 data<-c(rep(6,3),rep(3,3),rnorm(15,0,1))
 modes(data,3,NULL,4)
 ```
+```
        [,1] [,2] [,3]                   [,4]                
 Value  "3"  "6"  "-0.00528877744563036" "-0.265047873213653"
 Length "3"  "3"  "1"                    "1"                 
@@ -96,9 +97,11 @@ In modes(data, 3, NULL, 4) : A single observation
         Double check the class or inspect the data.
         Alternatively, you may have specified 'nmore' too many times 
         for this data.
+```
 
 ```
  modes(data,type=2,digits=1,3)
+```
 ```
         [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
 Value  -0.9    3    6   -2 -0.5 -0.3  0.2  0.5
@@ -109,14 +112,74 @@ In modes(data, type = 2, digits = 1, 3) : A single observation
         Double check the class or inspect the data.
         Alternatively, you may have specified 'nmore' too many times 
         for this data.
- 
+```
  
 ![Example 1.5.1] (Images/Example_1.5.1.jpeg)
 ![Example 1.5.1] (Images/Example_1.5.2.jpeg)
 
+
+
+Example 2.1
+```language-R
+set.seed(1246)
+data<-c(rnorm(15,0,1),rnorm(21,5,1))
+```
+
+![Example 2.1.1] (Images/Example_2.1.1.jpeg) 
+![Example 2.1.2] (Images/Example_2.1.2.jpeg)
+
+```
+> bimodality_amplitude(data,TRUE)
+[1] 0.5343913
+> bimodality_coefficient(data,TRUE)
+[1] 0.8894365
+> bimodality_ratio(data,FALSE)
+Amplitude (y) 
+     1.413765 
 ```
 
 
+
+Example 2.2
+```language-R
+set.seed(1246)
+data<-c(rnorm(21,0,1),rnorm(21,5,1))
+
 ```
 
+![Example 2.2.1] (Images/Example_2.2.1.jpeg) 
+![Example 2.2.2] (Images/Example_2.2.2.jpeg)
 
+```
+
+> bimodality_amplitude(data,TRUE)
+[1] 0.5569044
+> bimodality_coefficient(data,TRUE)
+[1] 0.880667
+> bimodality_ratio(data,FALSE)
+Amplitude (y) 
+    0.9039876 
+```
+![Example 2.2.3] (Images/Example_2.2.3.jpeg)
+
+
+
+
+
+
+
+
+
+Example 99.9
+```language-R
+
+
+
+```
+
+![Example 1.1.1] (Images/Example_1.1.1.jpeg) 
+![Example 1.1.1] (Images/Example_1.1.2.jpeg)
+
+```
+
+```
