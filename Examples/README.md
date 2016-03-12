@@ -248,6 +248,17 @@ Amplitude (y)
 
 Example 4.1
 ```language-R
+set.seed(1246)
+dist1<-rnorm(14,-5,1)
+dist2<-rnorm(21,5,1)
+
+
+
+mu1<-mean(dist1)
+mu2<-mean(dist2)
+sd1<-sd(dist1)
+sd2<-sd(dist2)
+
 
 
 
@@ -258,6 +269,11 @@ Example 4.1
 
 ```
 
+> Ashmans_D(mu1,mu2,sd1,sd2)
+[1] 12.10559
+> bimodality_separation(mu1,mu2,sd1,sd2)
+[1] -3.061472
+> 
 ```
 
 
@@ -275,7 +291,10 @@ Example 5.1
 ![Example 5.1.1] (Images/Example_5.1.2.jpeg)
 
 ```
-
+> Ashmans_D(mu1,mu2,sd1,sd2)
+[1] 12.10559
+> bimodality_separation(mu1,mu2,sd1,sd2)
+[1] -3.061472
 ```
 
 
