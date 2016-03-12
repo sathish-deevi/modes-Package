@@ -59,7 +59,9 @@ Example 1.4
 ![Example 1.4.1] (Images/Example_1.4.2.jpeg)
 
 ```
-
+       [,1]
+Value     0
+Length   12
 
 ```
 
