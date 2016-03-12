@@ -225,25 +225,80 @@ bimodality_amplitude(data,TRUE)
 bimodality_ratio(data,FALSE)
 </code></pre>
 
-<p>Example 3.2</p>
+<pre><code>
+![Example 3.1.1] (Images/Example_3.1.1.jpeg) 
+![Example 3.1.1] (Images/Example_3.1.2.jpeg)
 
-<pre><code>set.seed(1246)
+</code></pre>
+
+<blockquote>
+<p>bimodality_amplitude(data,TRUE)
+[1] 0.6894354
+bimodality_ratio(data,FALSE)
+Amplitude (y) 
+     1.000229 </p>
+</blockquote>
+
+<pre><code>![Example 3.1.3] (Images/Example_3.1.3.jpeg) 
+
+
+
+Example 3.2
+</code></pre>
+
+<p>set.seed(1246)
 dist1&lt;-rnorm(21,-15,1)
 dist2&lt;-rep(dist1,3)+30
 data&lt;-c(dist1,dist2)
 hist(data)
 bimodality_amplitude(data,TRUE)
-bimodality_ratio(data,FALSE)
+bimodality_ratio(data,FALSE)</p>
+
+<pre><code>
+
+![Example 3.2.1] (Images/Example_3.2.1.jpeg) 
+![Example 3.2.1] (Images/Example_3.2.2.jpeg)
+
 </code></pre>
 
-<p>Example 3.4</p>
+<blockquote>
+<p>bimodality_amplitude(data,TRUE)
+[1] 1
+bimodality_ratio(data,FALSE)
+Amplitude (y) 
+     2.999414 </p>
+</blockquote>
 
-<pre><code>dist1&lt;-rep(7,70)
+<pre><code>
+![Example 3.2.3] (Images/Example_3.2.3.jpeg) 
+
+
+Example 3.4
+</code></pre>
+
+<p>dist1&lt;-rep(7,70)
 dist2&lt;-rep(-7,70)
 data&lt;-c(dist1,dist2)
 hist(data)
-bimodality_ratio(data,FALSE)
+bimodality_ratio(data,FALSE)</p>
+
+<pre><code>
+
+
+![Example 3.3.1] (Images/Example_3.3.1.jpeg) 
+![Example 3.3.1] (Images/Example_3.3.2.jpeg)
+
 </code></pre>
+
+<blockquote>
+<p>bimodality_ratio(data,FALSE)
+Amplitude (y) 
+            1 </p>
+
+<pre><code>
+
+</code></pre>
+</blockquote>
 
 <h3>
 <a id="parametric-examples" class="anchor" href="#parametric-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parametric Examples</h3>
