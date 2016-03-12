@@ -137,6 +137,7 @@ data<-c(rnorm(15,0,1),rnorm(21,5,1))
 Amplitude (y) 
      1.413765 
 ```
+![Example 2.1.3] (Images/Example_2.1.3.jpeg)
 
 
 
