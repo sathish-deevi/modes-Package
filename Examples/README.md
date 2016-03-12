@@ -53,7 +53,9 @@ Length    9    8    7    6
 Example 1.4
 ```language-R
 
-
+    set.seed(1246)
+    data<-c(rnorm(15,0,1),rnorm(21,5,1),rep(3,3))
+    mode(data)
 ```
 ![Example 1.4.1] (Images/Example_1.4.1.jpeg)
 ![Example 1.4.1] (Images/Example_1.4.2.jpeg)
@@ -188,10 +190,6 @@ Amplitude (y)
      
 ```
 
-
-
-
-
 ![Example 3.1.3] (Images/Example_3.1.3.jpeg) 
 
 
@@ -258,9 +256,6 @@ mu1<-mean(dist1)
 mu2<-mean(dist2)
 sd1<-sd(dist1)
 sd2<-sd(dist2)
-
-
-
 
 ```
 
