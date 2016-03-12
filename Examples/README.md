@@ -283,7 +283,9 @@ sd2<-sd(dist2)
 Example 5.1
 ```language-R
 
-
+set.seed(1246)
+data<-c(rnorm(15,0,1),rnorm(21,15,3))
+plot(density(c(dist1,dist2)), main="Bimodal Gaussian mixture distribution")
 
 ```
 
